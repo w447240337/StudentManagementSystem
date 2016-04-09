@@ -101,7 +101,7 @@
                             <div class="form-group form-group-lg">
                                 <div class="input-group">
                                     <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                                    <input type="text" name="teacherlogin.username" id="login_login_username" class="form-control" placeholder="请输入用户名">
+                                    <input type="text" name="teacherlogin.username" id="teacherlogin_teacherlogin_username" class="form-control" placeholder="请输入用户名">
                                 </div>
                             </div>
                             <div class="form-group form-group-lg">
