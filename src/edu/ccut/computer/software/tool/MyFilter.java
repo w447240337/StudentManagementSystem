@@ -14,7 +14,6 @@ public class MyFilter extends AbstractInterceptor {
 		// TODO Auto-generated method stub
 		Map session = arg0.getInvocationContext().getSession();
 		Login user = (Login) session.get("user");
-		TeacherLogin user = (TeachaerLogin) session.get("user");
 		if (user == null) {
 			return Action.LOGIN;
 		}
