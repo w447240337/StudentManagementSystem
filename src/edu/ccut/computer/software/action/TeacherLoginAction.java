@@ -14,6 +14,7 @@ public class TeacherLoginAction extends ActionSupport {
 
 	@Override
 	public String execute() throws Exception {
+		System.out.println(teacherlogin.getUsername());
 		TeacherLogin user = teacherloginService
 				.find(teacherlogin.getUsername(), teacherlogin.getPassword());
 		if (user != null) {

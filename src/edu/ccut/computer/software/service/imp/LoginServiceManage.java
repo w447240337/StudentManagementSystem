@@ -13,6 +13,7 @@ public class LoginServiceManage implements LoginService {
 	}
 
 	public Login find(String username, String password) {
+		System.out.println("1");
 		return loginDao.find(username, password);
 	}
 

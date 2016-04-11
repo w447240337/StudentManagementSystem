@@ -14,6 +14,7 @@ public class LoginAction extends ActionSupport {
 
 	@Override
 	public String execute() throws Exception {
+		System.out.println(login.getUsername());
 		Login user = loginService
 				.find(login.getUsername(), login.getPassword());
 		if (user != null) {

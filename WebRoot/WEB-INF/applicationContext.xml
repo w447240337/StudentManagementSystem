@@ -30,6 +30,7 @@
 		<property name="mappingResources">
 			<list>
 				<value>edu/ccut/computer/software/model/Login.hbm.xml</value>
+				<value>edu/ccut/computer/software/model/TeacherLogin.hbm.xml</value>
 				<value>edu/ccut/computer/software/model/Student.hbm.xml</value>
 				<value>edu/ccut/computer/software/model/Course.hbm.xml</value>
 				<value>edu/ccut/computer/software/model/Major.hbm.xml</value>

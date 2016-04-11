@@ -28,6 +28,7 @@ public class TeacherLogin implements java.io.Serializable {
 	}
 
 	public String getUsername() {
+		System.out.println("1");
 		return username;
 	}
 
