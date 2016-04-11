@@ -83,6 +83,11 @@
 			<ref bean="sessionFactory" />
 		</property>
 	</bean>
+	<bean id="teacherloginDao" class="edu.ccut.computer.software.dao.imp.TeacherLoginDaoImp">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
 	<bean id="studentDao" class="edu.ccut.computer.software.dao.imp.StudentDaoImp">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory"/>
@@ -104,6 +109,11 @@
 		</property>
 	</bean>
 	<bean id="loginService" class="edu.ccut.computer.software.service.imp.LoginServiceManage">
+		<property name="loginDao">
+			<ref bean="loginDao"/>
+		</property>
+	</bean>
+	<bean id="teacherloginService" class="edu.ccut.computer.software.service.imp.LoginServiceManage">
 		<property name="loginDao">
 			<ref bean="loginDao"/>
 		</property>
@@ -135,6 +145,11 @@
 		</property>
 	</bean>
 	<bean id="loginAction" class="edu.ccut.computer.software.action.LoginAction">
+		<property name="loginService">
+			<ref bean="loginService"/>
+		</property>
+	</bean>
+	<bean id="teacherloginAction" class="edu.ccut.computer.software.action.LoginAction">
 		<property name="loginService">
 			<ref bean="loginService"/>
 		</property>
