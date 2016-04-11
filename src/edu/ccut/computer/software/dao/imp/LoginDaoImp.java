@@ -18,6 +18,7 @@ public class LoginDaoImp extends HibernateDaoSupport implements LoginDao {
 	}
 
 	public Login find(String username, String password) {
+		System.out.println("2");
 		String str[] = { username, password };
 		List list = getHibernateTemplate().find(
 				"from Login where username=? and password=?", str);

@@ -145,7 +145,7 @@
 			<ref bean="scoreDao"/>
 		</property>
 	</bean>
-	<bean id="loginAction" class="edu.ccut.computer.software.action.LoginAction">
+	<bean id="loginActionn" class="edu.ccut.computer.software.action.LoginAction">
 		<property name="loginService">
 			<ref bean="loginService"/>
 		</property>
