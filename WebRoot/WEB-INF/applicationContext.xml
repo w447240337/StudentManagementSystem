@@ -45,7 +45,7 @@
             	<ref local="sessionFactory"/>
             </property>
     </bean>
-    <!--   配置事务拦截器-->
+    <!--   配置事务拦截器1-->
     <bean id="transactionInterceptor"
         class="org.springframework.transaction.interceptor.TransactionInterceptor">
         <!--   事务拦截器bean需要依赖注入一个事务管理器 -->
