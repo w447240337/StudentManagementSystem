@@ -1,22 +1,24 @@
-#
-#Wed Mar 11 16:30:11 CST 2009
+#MyEclipse Hibernate Properties
+#Fri Jun 08 11:53:14 CST 2012
+sessionFactoryName=com.absence.hibernate.util.HibernateSessionFactory
 genBasicCompId=false
-sessionFactoryName=
 profile=
 daoSFId=
-version=3.2
+version=3.3
 jndiPath=
 detectM2M=false
 reStrategyClass=
+detectO2O=false
 springDaoFile=
-useJavaTypes=true
-keyGenerator=native
-libInstallFolder=WebRoot/WEB-INF/lib
-addLibs2Project=false
+useJavaTypes=false
+keyGenerator=
+libInstallFolder=<no jars/zips in selected libraries>
+addLibs2Project=true
 genVersionTag=false
-sessionFactoryId=sessionFactory
+sessionFactoryId=
 basePersistenceClass=
+genAnnotations=false
 reSettingsFile=
-configFile=/xscjManage/WebRoot/WEB-INF/applicationContext.xml
-createConfigFile=false
-addLibs2Classpath=false
+configFile=/Absence/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=true

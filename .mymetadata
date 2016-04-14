@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="StudentManagementSystem"
-  id="myeclipse.1236759998937"
-  context-root="/xscjManage"
-  j2ee-spec="5.0"
-  archive="StudentManagementSystem.war">
+  name="Absence"
+  id="myeclipse.1338890000609"
+  context-root="/Absence"
+  j2ee-spec="6.0"
+  archive="Absence.war">
   <attributes>
     <attribute name="webrootdir" value="WebRoot" />
   </attributes>
