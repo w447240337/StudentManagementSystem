@@ -2,62 +2,74 @@
 <!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
 
 <struts-config>
-  <data-sources />
-  <form-beans>
-    <form-bean name="loginForm" type="com.absence.struts.forms.LoginForm"></form-bean>
-    <form-bean name="qingjiaForm" type="com.absence.struts.forms.QingjiaForm"></form-bean>
-    <form-bean name="IdForm" type="com.absence.struts.forms.IdForm"></form-bean>
-    <form-bean name="aidForm" type="com.absence.struts.forms.AidForm"></form-bean>
-    <form-bean name="updateForm" type="com.absence.struts.forms.UpdateForm"></form-bean>
-    <form-bean name="checkForm" type="com.absence.struts.forms.CheckForm"></form-bean>
-  </form-beans> 
-  <global-exceptions />
-  <global-forwards />
-  <action-mappings>
-    <action path="/index" forward="/login.jsp"></action>
-    <action path="/login" name="loginForm" scope="request" type="com.absence.struts.action.LoginAction" input="/login.jsp">
-       <forward name="success" path="/teacher.jsp"/>
-       <forward name="ok" path="/student.jsp"/>
-       <forward name="failure" path="/login.jsp"/>
-    </action>
-    <action path="/qingjia" name="qingjiaForm" scope="request" type="com.absence.struts.action.QingjiaAction" input="/qingjia.jsp">
-       <forward name="success" path="/student.jsp"/>
-       <forward name="failure" path="/qingjia.jsp"/>
-    </action>
-    <action path="/save" name="updateForm" scope="request" type="com.absence.struts.action.SaveAction" input="/update.jsp">
-       <forward name="success" path="/student.jsp"/>
-    </action>
-    <action path="/search" name="IdForm" scope="request" type="com.absence.struts.action.SearchAction">
-       <forward name="success" path="/search.jsp"/>
-    </action>
-    <action path="/update" name="aidForm" scope="request" type="com.absence.struts.action.UpdateAction">
-       <forward name="success" path="/update.jsp"/>
-    </action>
-     <action path="/delect" name="aidForm" scope="request" type="com.absence.struts.action.DelectAction">
-       <forward name="success" path="/student.jsp"/>
-    </action>
-    <action path="/logout" type="com.absence.struts.action.LogoutAction">
-        <forward name="logout" path="/login.jsp" redirect="true"/>
-    </action>
-     <action path="/check" name="IdForm" scope="request" type="com.absence.struts.action.CheckAction">
-       <forward name="success" path="/check.jsp"/>
-    </action>
-    <action path="/checkover" name="IdForm" scope="request" type="com.absence.struts.action.CheckoverAction">
-       <forward name="success" path="/checkover.jsp"/>
-    </action>
-    <action path="/examine" name="checkForm" scope="request" type="com.absence.struts.action.ExamineAction">
-       <forward name="success" path="/examine.jsp"/>
-    </action>
-    <action path="/examin" name="checkForm" scope="request" type="com.absence.struts.action.ExamineAction">
-       <forward name="success" path="/examin.jsp"/>
-    </action>
-    <action path="/Tdelect" name="checkForm" scope="request" type="com.absence.struts.action.TdelectAction">
-       <forward name="success" path="/teacher.jsp"/>
-    </action>
-     <action path="/shenhe" name="checkForm" scope="request" type="com.absence.struts.action.ShenheAction">
-       <forward name="success" path="/teacher.jsp"/>
-    </action>
-  </action-mappings>
-  <message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+	<data-sources />
+	<form-beans>
+		<form-bean name="loginForm" type="com.absence.struts.forms.LoginForm"></form-bean>
+		<form-bean name="qingjiaForm" type="com.absence.struts.forms.QingjiaForm"></form-bean>
+		<form-bean name="IdForm" type="com.absence.struts.forms.IdForm"></form-bean>
+		<form-bean name="aidForm" type="com.absence.struts.forms.AidForm"></form-bean>
+		<form-bean name="updateForm" type="com.absence.struts.forms.UpdateForm"></form-bean>
+		<form-bean name="checkForm" type="com.absence.struts.forms.CheckForm"></form-bean>
+	</form-beans>
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+		<action path="/index" forward="/login.jsp"></action>
+		<action path="/login" name="loginForm" scope="request"
+			type="com.absence.struts.action.LoginAction" input="/login.jsp">
+			<forward name="success" path="/teacher.jsp" />
+			<forward name="ok" path="/student.jsp" />
+			<forward name="failure" path="/login.jsp" />
+		</action>
+		<action path="/qingjia" name="qingjiaForm" scope="request"
+			type="com.absence.struts.action.QingjiaAction" input="/qingjia.jsp">
+			<forward name="success" path="/student.jsp" />
+			<forward name="failure" path="/qingjia.jsp" />
+		</action>
+		<action path="/save" name="updateForm" scope="request"
+			type="com.absence.struts.action.SaveAction" input="/update.jsp">
+			<forward name="success" path="/student.jsp" />
+		</action>
+		<action path="/search" name="IdForm" scope="request"
+			type="com.absence.struts.action.SearchAction">
+			<forward name="success" path="/search.jsp" />
+		</action>
+		<action path="/update" name="aidForm" scope="request"
+			type="com.absence.struts.action.UpdateAction">
+			<forward name="success" path="/update.jsp" />
+		</action>
+		<action path="/delect" name="aidForm" scope="request"
+			type="com.absence.struts.action.DelectAction">
+			<forward name="success" path="/student.jsp" />
+		</action>
+		<action path="/logout" type="com.absence.struts.action.LogoutAction">
+			<forward name="logout" path="/login.jsp" redirect="true" />
+		</action>
+		<action path="/check" name="IdForm" scope="request"
+			type="com.absence.struts.action.CheckAction">
+			<forward name="success" path="/check.jsp" />
+		</action>
+		<action path="/checkover" name="IdForm" scope="request"
+			type="com.absence.struts.action.CheckoverAction">
+			<forward name="success" path="/checkover.jsp" />
+		</action>
+		<action path="/examine" name="checkForm" scope="request"
+			type="com.absence.struts.action.ExamineAction">
+			<forward name="success" path="/examine.jsp" />
+		</action>
+		<action path="/examin" name="checkForm" scope="request"
+			type="com.absence.struts.action.ExamineAction">
+			<forward name="success" path="/examin.jsp" />
+		</action>
+		<action path="/Tdelect" name="checkForm" scope="request"
+			type="com.absence.struts.action.TdelectAction">
+			<forward name="success" path="/teacher.jsp" />
+		</action>
+		<action path="/shenhe" name="checkForm" scope="request"
+			type="com.absence.struts.action.ShenheAction">
+			<forward name="success" path="/teacher.jsp" />
+		</action>
+	</action-mappings>
+	<message-resources parameter="com.yourcompany.struts.ApplicationResources" />
 </struts-config>
 
