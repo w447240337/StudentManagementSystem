@@ -152,7 +152,7 @@ public class UserDAO {
 		return b;
 	}
 
-	public boolean add(String id, String teachclass, String begintime, String overtime, String reason)
+	public boolean add(String id,String name, String teachclass, String begintime, String overtime, String reason)
 			throws HibernateException {
 		Session session = null;
 		Transaction tx = null;
@@ -163,6 +163,7 @@ public class UserDAO {
 			Application user = new Application();
 			Student stu = new Student();
 			stu.setId(id);
+			user.setName(name);
 			user.setStudent(stu);
 			user.setTeachclass(teachclass);
 			user.setBegintime(begintime);
@@ -170,6 +171,7 @@ public class UserDAO {
 			user.setReason(reason);
 			session.save(user);
 			System.out.println("eaxmine----" + user.getId());
+			System.out.println(user);
 			Examine exam = new Examine();
 			exam.setId(user.getId());
 			exam.setPermit("Œ¥…Û∫À");

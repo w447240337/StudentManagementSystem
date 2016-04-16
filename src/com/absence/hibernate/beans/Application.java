@@ -13,6 +13,7 @@ public class Application implements java.io.Serializable {
 
 	private Integer id;
 	private Student student;
+	private String name;
 	private String teachclass;
 	private String begintime;
 	private String overtime;
@@ -32,10 +33,11 @@ public class Application implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Application(Student student, String teachclass, String begintime,
+	public Application(Student student, String name, String teachclass, String begintime,
 			String overtime, String reason, Set examines) {
 		this.student = student;
 		this.teachclass = teachclass;
+		this.name = name;
 		this.begintime = begintime;
 		this.overtime = overtime;
 		this.reason = reason;
@@ -71,6 +73,10 @@ public class Application implements java.io.Serializable {
 	public String getBegintime() {
 		return this.begintime;
 	}
+	
+	public String getName() {
+		return this.name;
+	}
 
 	public void setBegintime(String begintime) {
 		this.begintime = begintime;
@@ -98,6 +104,10 @@ public class Application implements java.io.Serializable {
 
 	public void setExamines(Set examines) {
 		this.examines = examines;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

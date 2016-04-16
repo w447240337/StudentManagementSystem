@@ -50,6 +50,7 @@ public class QingjiaDAO {
 			Query query = null;
 			query = session.createQuery("from Application where id=?");
 			query.setInteger(0, id);
+			System.out.println(id);
 			System.out.println(query);
 			System.out.println(query.uniqueResult());
 			user = (Application) query.uniqueResult();
@@ -102,7 +103,7 @@ public class QingjiaDAO {
 	}
 
 	// 保存更新后的数据
-	public boolean Save(int id, String teachclass, String begintime, String overtime, String reason)
+	public boolean Save(int id, String name, String teachclass, String begintime, String overtime, String reason)
 			throws HibernateException {
 		Session session = null;
 		Transaction tx = null;

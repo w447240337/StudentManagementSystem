@@ -10,6 +10,7 @@ public class UpdateForm extends ActionForm{
 	int id=0;
 	String teachclass=null;
 	String xuehao=null;
+	String name=null;
 	String begintime=null;
 	String overtime=null;
 	String reason=null;
@@ -48,6 +49,12 @@ public class UpdateForm extends ActionForm{
 	}
 	public void setReason(String reason) {
 		this.reason = reason;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
     
 }

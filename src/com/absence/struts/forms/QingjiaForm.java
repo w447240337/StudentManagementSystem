@@ -11,6 +11,7 @@ public class QingjiaForm  extends ActionForm{
 	String begintime=null;
 	String overtime=null;
 	String reason=null;
+	String name=null;
 	
 	public String getTeachclass() {
 		return teachclass;
@@ -21,8 +22,14 @@ public class QingjiaForm  extends ActionForm{
 	public String getXuehao() {
 		return xuehao;
 	}
+	public String getName() {
+		return name;
+	}
 	public void setXuehao(String xuehao) {
 		this.xuehao = xuehao;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getBegintime() {
 		return begintime;

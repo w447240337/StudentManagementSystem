@@ -30,7 +30,7 @@ public class SaveAction extends DispatchAction{
 		System.out.println(xuehao);
 		UserDAO userDAO=new UserDAO();
 		QingjiaDAO qingjia=new QingjiaDAO();
-		boolean isSave=qingjia.Save(iform.getId(),iform.getTeachclass(),iform.getBegintime(),iform.getOvertime(),iform.getReason());
+		boolean isSave=qingjia.Save(iform.getId(),iform.getName(),iform.getTeachclass(),iform.getBegintime(),iform.getOvertime(),iform.getReason());
 		if(isSave){
 			String name=userDAO.isName_S(xuehao);
 			session.setAttribute("id",xuehao);

@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       borderColorDark="#ffffff" width="576" bgColor="#f0f5fd"  cellPadding="4">
         <TBODY>
         <TR>
-          <TD bgColor=#c1dcff colSpan=7><FONT style="FONT-SIZE: 9pt">学生的</FONT>
+          <TD bgColor=#c1dcff colSpan=7><FONT style="FONT-SIZE: 9pt">学生<%=cation.getName() %>的</FONT>
           <FONT style="FONT-SIZE: 9pt" color=#ff0000>请假信息：</FONT>
           </TD>
         </TR>

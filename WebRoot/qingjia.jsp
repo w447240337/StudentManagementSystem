@@ -39,6 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <TD width="150" align="center"><FONT style="FONT-SIZE: 9pt">学科:</FONT></TD>
           <TD width="126"><input name="teachclass" size="27"></TD>
           <td colspan="2"><input name="xuehao" type="hidden"  value="<%=id%>"></td>
+          <td colspan="2"><input name="name" type="hidden"  value="<%=(String)session.getAttribute("name") %>"></td>
         </TR>
          <TR>
           <td align="center" colspan="4">
