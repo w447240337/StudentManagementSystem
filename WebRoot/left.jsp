@@ -17,7 +17,7 @@
 <body>
     <div class="row" style="margin-right: 0px;">
         <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#">主页</a></li>
+            <li><a href="http://localhost/guestbook/liulan.php" target="right">查看信息</a></li>
             <li><a href="qingjia.jsp?id=<%=(String)session.getAttribute("id") %>" target="right">请假</a></li>
             <li><a href="search.do?id=<%=(String)session.getAttribute("id") %>" target="right">查看假条</a></li>
         </ul>

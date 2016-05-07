@@ -17,8 +17,8 @@
 <body>
     <div class="row" style="margin-right: 0px;">
         <ul class="nav nav-pills nav-stacked">
-            <li><a href="#">主页</a></li>
-            <li><a href="list.do?id=<%=(String)session.getAttribute("id") %>" target="right">学籍注册</a></li>
+            <li><a href="http://localhost/guestbook/index.php" target="right">发布信息</a></li>
+            <li><a href="http://localhost/guestbook/zhuce.php" target="right">学籍注册</a></li>
             <li><a href="check.do?id=<%=(String)session.getAttribute("id") %>" target="right">审批假条</a></li>
             <li><a href="checkover.do?id=<%=(String)session.getAttribute("id") %>" target="right">查看已批假条</a></li>
             <li><a href="#" target="right">查看学生出勤率</a></li>
